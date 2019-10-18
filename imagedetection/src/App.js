@@ -41,16 +41,16 @@ console.log(navigator.userAgent)
         //   console.log(err.name + ": " + err.message);
         // });
 
-        var enumeratorPromise =await navigator.mediaDevices.enumerateDevices().then(function(devices){
-          let r=devices.filter(i=>i.kind==='videoinput')
-          // devices.forEach(function(dev){
-           console.log(r)
-           alert(r[0].label)
-        //  })
-        }
+        // var enumeratorPromise =await navigator.mediaDevices.enumerateDevices().then(function(devices){
+        //   let r=devices.filter(i=>i.kind==='videoinput')
+        //   // devices.forEach(function(dev){
+        //    console.log(r)
+        //    alert(r[0].label)
+        // //  })
+        // }
           
-        );
-        console.log(enumeratorPromise)
+        // );
+        // console.log(enumeratorPromise)
         
 
         const webCamReturn= await navigator.mediaDevices.getUserMedia(constraints)
