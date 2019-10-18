@@ -165,7 +165,7 @@ console.log(navigator)
 
     return (
       <div className="App">
-        <video allow="camera;microphone"
+        <video
           className="size"
           autoPlay
           playsInline
