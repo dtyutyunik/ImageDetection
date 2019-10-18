@@ -24,23 +24,12 @@ class App extends Component {
       video: { facingMode: "user" }
       
     }
-console.log(navigator.userAgent)
+console.log(navigator)
     if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
       
       try{ 
         var video = document.querySelector('video');
         
-        // navigator.mediaDevices.enumerateDevices()
-        // .then(function(devices) {
-        //   devices.forEach(function(device) {
-        //     console.log(device.kind + ": " + device.label +
-        //                 " id = " + device.deviceId);
-        //   });
-        // })
-        // .catch(function(err) {
-        //   console.log(err.name + ": " + err.message);
-        // });
-
         // var enumeratorPromise =await navigator.mediaDevices.enumerateDevices().then(function(devices){
         //   let r=devices.filter(i=>i.kind==='videoinput')
         //   // devices.forEach(function(dev){
@@ -87,6 +76,10 @@ console.log(navigator.userAgent)
       catch(e){
         console.warn(e)
       }
+     
+    }
+    else{
+      console.log('problems accessing video')
     }
   }
 
@@ -172,14 +165,14 @@ console.log(navigator.userAgent)
 
     return (
       <div className="App">
-        <video
+        <video allow="camera;microphone"
           className="size"
           autoPlay
           playsInline
           muted
           width="600"
           height="500"
-          // ref={this.videoRef}
+          ref={this.videoRef}
           // width="600"
           // height="500"
           
