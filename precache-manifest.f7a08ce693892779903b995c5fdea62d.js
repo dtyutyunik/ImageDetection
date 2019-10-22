@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ba875bd11dbe1b7000b3c53ff18bffd0",
+    "revision": "e4816412d1f53b6d6c76d6aa5aec7632",
     "url": "/ImageDetection/index.html"
   },
   {
-    "revision": "585c6ecec6683a704df3",
+    "revision": "261a389f32cb84a98dea",
     "url": "/ImageDetection/static/css/main.69a6c00c.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ImageDetection/static/js/2.358d4a96.chunk.js"
   },
   {
-    "revision": "585c6ecec6683a704df3",
-    "url": "/ImageDetection/static/js/main.f2201891.chunk.js"
+    "revision": "261a389f32cb84a98dea",
+    "url": "/ImageDetection/static/js/main.881b4768.chunk.js"
   },
   {
     "revision": "120a7a7205a90d4085be",
