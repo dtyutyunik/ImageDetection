@@ -21,7 +21,8 @@ class App extends Component {
     const constraints= { audio: true, 
       // facingMode: user is selected for mobile devices, otherwise it would be video: { facingMode: { exact: "environment" } } for the rear
       // video: { facingMode: "user" }
-      video: { facingMode: "user" }
+      // video: { facingMode: "user" }
+      video: { facingMode: { exact: "environment" } }
       
     }
 console.log(navigator)
