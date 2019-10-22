@@ -87,6 +87,7 @@ console.log(navigator)
      
       detectFrame = (video, model) => {
 
+        console.log('video loaded')
         // console.log(video)
         // requestAnimationFrame(() => {
         //         this.detectFrame(video, model);
@@ -94,6 +95,7 @@ console.log(navigator)
           // if(video.onloadeddata){
             // console.log('vide loaded')
             model.detect(video).then(predictions => {
+              console.log('video detected')
               // if(video.onloadeddata=(e)=>({
                 this.renderPredictions(predictions);
                 // requestAnimationFrame is a callback function which repaints the animation, aka makes video recheck for renderPredicitons
@@ -117,6 +119,7 @@ console.log(navigator)
       
     
       renderPredictions = predictions => {
+        console.log('canvas opened')
         var canvas = document.querySelector('canvas');
         // const ctx = this.canvasRef.current.getContext("2d");
         const ctx = canvas.getContext("2d");
